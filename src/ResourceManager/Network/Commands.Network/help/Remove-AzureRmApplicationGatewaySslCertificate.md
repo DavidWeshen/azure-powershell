@@ -26,11 +26,13 @@ The **Remove-AzureRmApplicationGatewaySslCertificate** cmdlet removes a Secure S
 ### Example 1: Remove an SSL certificate from an application gateway
 ```
 PS C:\>$AppGW = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
-PS C:\> Remove-AzureRmApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert02"
+PS C:\>Remove-AzureRmApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert02"
+PS C:\>Set-AzureRMApplicationGateway -ApplicationGateway $AppGW
 ```
 
 The first command gets the application gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
 The second command removes the SSL certificate named Cert02 from the application gateway stored in the $AppGW variable.
+The third command updates the application gateway with the modified configuration set in the $AppGW variable.
 
 ## PARAMETERS
 
