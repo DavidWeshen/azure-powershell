@@ -32,6 +32,7 @@ PS C:\>Set-AzApplicationGateway -ApplicationGateway $AppGW
 
 The first command gets the application gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
 The second command removes the SSL certificate named Cert02 from the application gateway stored in the $AppGW variable.
+The third command updates the application gateway with the modified configuration saved in the variable $AppGW.
 
 ## PARAMETERS
 
