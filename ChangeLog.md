@@ -30,6 +30,7 @@
 
 #### Az.Network
 * Support for IpGroups in AzureFirewall Application,Nat & Network Rules.
+* Update documentation for Remove-AzureRMApplicationGatewaySslCertificate and Remove-AzApplicationGatewaySslCertificate
 
 #### Az.RecoveryServices
 * Added SoftDelete feature for VM and added tests for softdelete
