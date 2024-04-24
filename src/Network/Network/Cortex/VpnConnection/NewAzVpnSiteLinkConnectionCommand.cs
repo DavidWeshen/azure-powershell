@@ -133,6 +133,11 @@
                 vpnSiteLinkConnection.VpnConnectionProtocolType = this.VpnConnectionProtocolType;
             }
 
+            if (this.IpSecPolicy != null)
+            {
+                vpnSiteLinkConnection.IpsecPolicies = new List<PSIpsecPolicy> { this.IpSecPolicy };
+            }
+
             if (this.VpnGatewayCustomBgpAddress != null)
             {
                 vpnSiteLinkConnection.VpnGatewayCustomBgpAddresses = new List<PSGatewayCustomBgpIpConfiguration>();
